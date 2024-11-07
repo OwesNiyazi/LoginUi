@@ -1,0 +1,122 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Styled Form 6</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 20px; 
+            padding: 0;
+            margin: 0;
+        }  
+        form {  
+            
+            max-width: 500px;  
+            padding: 20px;  
+            border: 2px solid #4CAF50; 
+            border-radius: 10px; 
+            background-color: #f9f9f9;  
+            margin: 0 auto;
+        }  
+        h2 {  
+            color: #333; 
+            text-align: center;
+        }  
+        label {  
+            display: block; 
+            margin-bottom: 5px; 
+            font-weight: bold;   
+        }  
+        input[type="text"],  
+        input[type="email"],  
+        input[type="tel"],  
+        textarea {  
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 15px;  
+            border: 1px solid #ccc;
+            border-radius: 5px; 
+            box-sizing: border-box; 
+        }  
+        button {  
+            background-color: #4CAF50;  
+            color: white; 
+            border: none;  
+            padding: 10px 20px;   
+            border-radius: 5px; 
+            cursor: pointer; 
+            
+        }  
+        button:hover {  
+            background-color: #45a049; 
+        }  
+        input[type="radio"] {
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Add some space between the radio button groups */
+input[type="radio"] + label + input[type="radio"] {
+  margin-left: 20px;
+}
+    </style>  
+</head>  
+<body>  
+
+<form>  
+    <h2>Your details</h2>  
+    <label >1. Name</label>  
+    <input type="text"  placeholder="First and last name" required>  
+
+    <label for="email">2. Email</label>  
+    <input type="email" placeholder="example@domain.com" required>  
+
+    <label for="phone">3. Phone</label>  
+    <input type="tel" placeholder="Eg. +447500000000" required>  
+
+    <h2>Delivery address</h2>  
+
+    <label for="address">1. Address</label>  
+    <textarea id="address" name="address" required></textarea>  
+
+    <label>2. Post code</label>  
+    <input type="text"  required>  
+
+    <label>3. Country</label>  
+    <input type="text" required>  
+
+   <div> <h2>Card details</h2> </div> 
+<div>
+    <label>1. Card type</label>  
+    <br>
+  
+        <input type="radio" name="card-type">
+        <label>VISA</label>
+     
+     
+        <input type="radio" name="card-type">
+        <label>AmEx</label>
+     
+   
+        <input type="radio" name="card-type">
+        <label>Mastercard</label>
+</div>
+    <label for="card-number">2. Card number</label>  
+    <input type="text" id="card-number" name="card-number" placeholder="Exact name as on the card" required>  
+
+    <label for="security-code">3. Security code</label>  
+    <input type="password"  required>  
+
+    <button type="submit">Buy it!</button>  
+</form>  
+
+</body>  
+</html>
